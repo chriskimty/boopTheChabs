@@ -15,7 +15,7 @@ export default {
         if (this.score < 251) {
             this.rank = "Legendary Booper🏆!"
         } else if (this.score < 450) {
-            this.rank = "Boop-tastic! Almost a legend."
+            this.rank = "Boop-tastic! Nearly a legend."
         } else {
             this.rank = "BOOOOOOOp. Too slow."
         }
@@ -25,8 +25,8 @@ export default {
 
 <style>
     .rank {
-        font-size: 1.4rem;
-        color: #0faf87;
+        font-size: 1.8rem;
+        color: #2c3e50;
         font-weight: bold;
     }
 </style>

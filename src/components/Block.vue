@@ -1,17 +1,15 @@
 <template>
-    <div class="block" v-if="showBlock"  >
+    <div class="block" v-if="showBlock">
         <img :src="image" alt="chabs the cat" @click="stopTimer"/>
     </div>
 </template>
 
 <script>
 import image from '../assets/chabs.png'
-// import image2 from '../assets/finger.png'
 export default {
     data() {
         return {
             image: image,
-            // image2: image2,
             showBlock: false,
             timer: null,
             reactionTime: 0
@@ -44,8 +42,11 @@ export default {
     .block {
         z-index: 1;
         cursor: url(../assets/finger.png), auto;
+        position: fixed;
+        right: 37%;
+        top: 14.5%;
     }
     img {
-        width: 300px;
+        width: 400px;
     }
 </style>
