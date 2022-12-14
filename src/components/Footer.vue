@@ -1,5 +1,6 @@
 <template>
     <footer>
+        <!-- attribute binding - shorter form of <a v-bind:href="url">-->
         <div class="footerContent">
             <p>Copyright © <a :href="githubLink">Chris TY Kim </a>  2022</p>
             <p>✨Inspired by <a :href="tutorialLink">The Net Ninja</a></p>

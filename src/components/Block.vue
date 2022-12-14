@@ -1,5 +1,7 @@
 <template>
+    <!-- v-if directive - conditional -->
     <div class="block" v-if="showBlock">
+        <!-- attribute binding - shorter form of <a v-bind:href="url">-->
         <img :src="image" alt="chabs the cat" @click="stopTimer"/>
     </div>
 </template>
@@ -16,7 +18,7 @@ export default {
         }
     },
     props: ['delay'],
-    // lifecycles
+    // LIFECYCLES
     mounted() {
         // timer should be set in here
         setTimeout(() => {
@@ -32,6 +34,8 @@ export default {
         },
         stopTimer() {
             clearInterval(this.timer)
+            // Emit broadcasts a name of an event and data to its parent component, like so:
+                // this.$emit('name-of-emitted-event', dataToPass)
             this.$emit('end', this.reactionTime)
         }
     }
@@ -41,6 +45,7 @@ export default {
 <style>
     .block {
         z-index: 1;
+        /* custom cursor! */
         cursor: url(../assets/finger.png), auto;
         position: fixed;
         right: 37%;

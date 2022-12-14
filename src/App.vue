@@ -10,9 +10,12 @@
       <br>BOOP👆 the chabs as quick as you can.</p>
       <p>Good luck!</p>
       <div class="buttonContainer">
+        <!-- shorter form of v-on:click -->
+        <!-- v-on directive is like event listener -->
         <button @click="start" :disabled="isPlaying" class="button">{{buttonText}}</button>
       </div>
   </div>
+  <!-- v-if directive - conditional -->
     <Block v-if="isPlaying" :delay="delay" @end="endGame"/>
     <Results v-if="showResults" :score="score"/>
     <Footer />
@@ -37,7 +40,7 @@ export default {
   methods: {
     start() {
       // 2000 (2s base time)
-      // Will give us random time between 2-7 seconds
+        // Will give us random time between 2-7 seconds
       this.delay = 2000 + Math.random() * 5000
       this.isPlaying = true
       this.showResults = false

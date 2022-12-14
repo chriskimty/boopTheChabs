@@ -77,12 +77,12 @@ h1 {
 
     .instructions {
         max-width: 400px;
-        height: 400px;
+        height: 330px;
         padding: 2%;
     }
 
     .instructions p {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
     .block img {
@@ -91,12 +91,23 @@ h1 {
 }
 
 @media (max-width: 430px){
+
+    .instructions {
+        overflow-y: auto;
+        height: 280px;
+    }
+
     .instructions {
         max-width: 320px;
     }
 
     .instructions p {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
+    }
+
+    .button {
+        margin-top: 0px;
+        padding: 13px 20px;
     }
 
     .block {
