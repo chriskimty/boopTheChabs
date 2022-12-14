@@ -1,6 +1,8 @@
 <template>
-    <p>Your boop time: {{ score }} ms</p>
-    <p class="rank"> {{ rank }}</p>
+    <div class="results">
+        <p>Your boop time: {{ score }} ms</p>
+        <p class="rank"> {{ rank }}</p>
+    </div>
 </template>
 
 <script>
